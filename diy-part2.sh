@@ -11,7 +11,7 @@
 #
 
 # Modify default IP
-sed -i 's/192.168.1.1/192.168.123.222/g' package/base-files/files/bin/config_generate
+sed -i 's/192.168.1.1/192.168.1.222/g' package/base-files/files/bin/config_generate
 
 # 修改时区
 sed -i 's/UTC/CST-8/' package/base-files/files/bin/config_generate
