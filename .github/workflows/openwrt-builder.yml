@@ -72,10 +72,10 @@ jobs:
         sudo mkdir -p /workdir
         sudo chown $USER:$GROUPS /workdir
 
-    - name: 获取最新 Release Tag via API
-      id: get_latest_api
-      run: |
-        echo "$(wget --no-check-certificate -qO- https://api.github.com/repos/immortalwrt/immortalwrt/tags | grep 'name' | cut -d\" -f4 | head -1)" > $REPO_BRANCH
+    # - name: 获取最新 Release Tag via API
+    #   id: get_latest_api
+    #   run: |
+    #     echo "$(wget --no-check-certificate -qO- https://api.github.com/repos/immortalwrt/immortalwrt/tags | grep 'name' | cut -d\" -f4 | head -1)" > $REPO_BRANCH
 
     - name: Clone source code
       working-directory: /workdir
